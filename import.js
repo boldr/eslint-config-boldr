@@ -23,6 +23,7 @@ module.exports = {
     'import/export': 2,
     'import/no-named-as-default': 0,
     'import/no-named-as-default-member': 0,
+    'import/no-anonymous-default-export': 0,
     'import/order': [
       2,
       {

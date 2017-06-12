@@ -15,7 +15,6 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
-    'shared-node-browser': true,
     jest: true,
   },
   // http://eslint.org/docs/user-guide/configuring#configuring-plugins

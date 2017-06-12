@@ -4,6 +4,8 @@ module.exports = {
     node: true,
   },
   rules: {
+    'array-bracket-newline': 0,
+    'array-element-newline': 0,
     // enforces getter/setter pairs in objects
     'accessor-pairs': 0,
     // enforces return statements in callbacks of array's methods
@@ -32,8 +34,11 @@ module.exports = {
     'dot-location': 0,
     // require the use of === and !==
     eqeqeq: 2,
+    'for-direction': 0,
+    'padding-line-between-statements': 0,
     // make sure for-in loops have an if statement
     'guard-for-in': 2,
+    'no-buffer-constructor': 0,
     // disallow the use of alert, confirm, and prompt
     'no-alert': 1,
     // disallow use of arguments.caller or arguments.callee
@@ -221,7 +226,7 @@ module.exports = {
     'symbol-description': 1,
 
     strict: [2, 'never'],
-
+    'switch-colon-spacing': [2, { after: true, before: false }],
     'unicode-bom': 0,
     'require-jsdoc': 0,
     'template-tag-spacing': 0,

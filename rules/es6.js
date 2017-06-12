@@ -78,13 +78,7 @@ module.exports = {
 
     // BABEL
     'babel/flow-object-type': 0,
-    'babel/new-cap': [
-      2,
-      {
-        newIsCap: true,
-        capIsNew: true,
-      },
-    ],
+    'babel/new-cap': 0,
     'babel/no-invalid-this': 2,
     'babel/object-curly-spacing': 0,
     'babel/semi': [2, 'always'],

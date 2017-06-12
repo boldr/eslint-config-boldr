@@ -53,6 +53,7 @@ module.exports = {
     // this option sets a specific tab width for your code
     // https://github.com/eslint/eslint/blob/master/docs/rules/indent.md
     indent: 0,
+    'indent-legacy': [2, 2],
     'key-spacing': 0,
     'keyword-spacing': 0,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
@@ -151,6 +152,7 @@ module.exports = {
     'semi-spacing': 0,
     // @NOTE: exists in rules/babel.js
     semi: 0,
+    'semi-style': [2, 'last'],
     'sort-keys': 0,
     'sort-vars': 0,
     'space-before-blocks': 0,
