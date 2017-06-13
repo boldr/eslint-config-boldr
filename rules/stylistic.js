@@ -53,7 +53,7 @@ module.exports = {
     // this option sets a specific tab width for your code
     // https://github.com/eslint/eslint/blob/master/docs/rules/indent.md
     indent: 0,
-    'indent-legacy': [2, 2],
+    'indent-legacy': 0,
     'key-spacing': 0,
     'keyword-spacing': 0,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
