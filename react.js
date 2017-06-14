@@ -20,6 +20,9 @@ module.exports = {
     },
   },
   rules: {
+    'react/default-props-match-prop-types': 2,
+    'react/jsx-closing-tag-location': 2,
+    'react/no-redundant-should-component-update': 2,
     'react/no-will-update-set-state': 2,
     // specify whether double or single quotes should be used in JSX attributes
     // http://eslint.org/docs/rules/jsx-quotes
@@ -190,13 +193,7 @@ module.exports = {
     'react/sort-comp': [
       2,
       {
-        order: [
-          'static-methods',
-          'lifecycle',
-          'everything-else',
-          '/^render.+$/',
-          'render',
-        ],
+        order: ['static-methods', 'lifecycle', 'everything-else', '/^render.+$/', 'render'],
       },
     ],
     'react/no-deprecated': 2,
