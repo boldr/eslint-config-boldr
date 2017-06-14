@@ -167,13 +167,15 @@ module.exports = {
     // http://eslint.org/docs/rules/jsx-quotes
     'jsx-quotes': 0,
     'prettier/prettier': [
-      2,
+      'error',
       {
         trailingComma: 'all',
         singleQuote: true,
         semi: true,
+        bracketSpacing: true,
         jsxBracketSameLine: false,
         printWidth: 100,
+        parser: 'flow',
       },
     ],
   },

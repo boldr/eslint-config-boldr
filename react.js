@@ -20,8 +20,13 @@ module.exports = {
     },
   },
   rules: {
-    'react/default-props-match-prop-types': 2,
-    'react/jsx-closing-tag-location': 2,
+    'react/default-props-match-prop-types': [
+      'error',
+      {
+        allowRequiredDefaults: true,
+      },
+    ],
+    'react/jsx-closing-tag-location': 'error',
     'react/no-redundant-should-component-update': 2,
     'react/no-will-update-set-state': 2,
     // specify whether double or single quotes should be used in JSX attributes

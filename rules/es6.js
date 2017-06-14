@@ -6,13 +6,6 @@ module.exports = {
     // require space before/after arrow function's arrow
     // https://github.com/eslint/eslint/blob/master/docs/rules/arrow-spacing.md
     // disabled for prettier
-    // 'arrow-spacing': [
-    //   2,
-    //   {
-    //     before: true,
-    //     after: true,
-    //   },
-    // ],
     'arrow-spacing': 0,
     // disallow arrow functions where they could be confused with comparisons
     // http://eslint.org/docs/rules/no-confusing-arrow
