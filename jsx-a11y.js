@@ -9,7 +9,6 @@ module.exports = {
   },
   plugins: ['react', 'jsx-a11y'],
   rules: {
-    //
     'jsx-a11y/media-has-caption': 2,
     'jsx-a11y/no-interactive-element-to-noninteractive-role': 2,
     'jsx-a11y/no-noninteractive-element-to-interactive-role': 2,
@@ -38,7 +37,6 @@ module.exports = {
         components: [''],
       },
     ],
-    'jsx-a11y/href-no-hash': 2,
     'jsx-a11y/html-has-lang': 2,
     'jsx-a11y/iframe-has-title': 2,
     'jsx-a11y/alt-text': 2,

@@ -25,8 +25,5 @@ module.exports = {
     './rules/possible-errors.js',
     './rules/node.js',
     './rules/es6.js',
-    './import.js',
-    './jsx-a11y.js',
-    './react.js'
   ],
 };

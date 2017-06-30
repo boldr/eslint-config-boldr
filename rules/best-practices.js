@@ -226,7 +226,7 @@ module.exports = {
     'symbol-description': 1,
 
     strict: [2, 'never'],
-    'switch-colon-spacing': [2, { after: true, before: false }],
+    'switch-colon-spacing': 'off',
     'unicode-bom': 0,
     'require-jsdoc': 0,
     'template-tag-spacing': 0,

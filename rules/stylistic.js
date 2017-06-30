@@ -101,7 +101,7 @@ module.exports = {
     'no-new-object': 2,
     'no-plusplus': 0,
     'no-spaced-func': 0,
-    'no-tabs': 2,
+    'no-tabs': 'error',
     'no-ternary': 0,
     'no-trailing-spaces': 0,
     'no-underscore-dangle': 0,
@@ -152,7 +152,7 @@ module.exports = {
     'semi-spacing': 0,
     // @NOTE: exists in rules/babel.js
     semi: 0,
-    'semi-style': [2, 'last'],
+    'semi-style': 'off',
     'sort-keys': 0,
     'sort-vars': 0,
     'space-before-blocks': 0,

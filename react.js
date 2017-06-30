@@ -26,7 +26,7 @@ module.exports = {
         allowRequiredDefaults: true,
       },
     ],
-    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-closing-tag-location': 'off',
     'react/no-redundant-should-component-update': 2,
     'react/no-will-update-set-state': 2,
     // specify whether double or single quotes should be used in JSX attributes
