@@ -16,6 +16,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-tabindex': 2,
     // aria-label=
     'jsx-a11y/accessible-emoji': 2,
+    'jsx-a11y/anchor-is-valid': 0,
     // Enforce that anchors have content and that the content is
     // accessible to screen readers. Accessible means that it is not
     // hidden using the aria-hidden prop
