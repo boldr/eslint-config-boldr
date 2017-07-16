@@ -241,7 +241,7 @@ module.exports = {
     // disallow use of undefined variable
     'no-undefined': 0,
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': 0,
+    'no-unused-vars': 'error',
     // disallow labels that share a name with a variable
     'no-label-var': 0,
     // disallow self assignment
