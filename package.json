@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.11.0",
+  "version": "0.11.2",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
@@ -17,7 +17,7 @@
     "promise.js"
   ],
   "scripts": {
-    "find-new-rules": "eslint-find-rules --unused ./index.js",
+    "find-new-rules": "eslint-find-rules --unused ./index.test.js",
     "lint": "eslint .",
     "test": "yarn lint && yarn find-new-rules",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check"
@@ -44,22 +44,22 @@
     "node": ">= 7"
   },
   "peerDependencies": {
-    "eslint": "^4.1.1",
-    "prettier": "^1.5.2"
+    "eslint": "^4.2.0",
+    "prettier": "^1.5.3"
   },
   "devDependencies": {
     "cz-conventional-changelog-emoji": "^0.1.0",
-    "eslint": "^4.1.1",
+    "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-find-rules": "^3.1.1",
     "npm-run-all": "^4.0.2",
-    "prettier": "^1.5.2"
+    "prettier": "^1.5.3"
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "6.0.2",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-promise": "^3.5.0",

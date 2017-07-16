@@ -13,12 +13,6 @@ module.exports = {
       jsx: true,
     },
   },
-  settings: {
-    react: {
-      pragma: 'React',
-      version: '15',
-    },
-  },
   rules: {
     'react/default-props-match-prop-types': [
       'error',
@@ -50,7 +44,7 @@ module.exports = {
     'react/jsx-no-comment-textnodes': 2,
     'react/no-array-index-key': 2,
     'react/jsx-no-target-blank': 2,
-    'react/no-unused-prop-types': 0,
+    'react/no-unused-prop-types': 'warn',
 
     'react/require-optimization': 0,
     'react/forbid-foreign-prop-types': 0,
@@ -136,10 +130,10 @@ module.exports = {
     'react/jsx-sort-props': 0,
     // Prevent React to be incorrectly marked as unused
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
-    'react/jsx-uses-react': 2,
+    'react/jsx-uses-react': 'error',
     // Prevent variables used in JSX to be incorrectly marked as unused
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md
-    'react/jsx-uses-vars': 2,
+    'react/jsx-uses-vars': 'error',
     // Prevent usage of dangerous JSX properties
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
     'react/no-danger': 0,
@@ -168,7 +162,7 @@ module.exports = {
     // Require stateless functions when not using lifecycle methods,
     // setState or ref
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-    'react/prefer-stateless-function': 0,
+    'react/prefer-stateless-function': 1,
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': [
@@ -204,7 +198,7 @@ module.exports = {
     'react/no-deprecated': 2,
     'react/no-did-mount-set-state': 2,
     'react/no-did-update-set-state': 2,
-    'react/no-find-dom-node': 2,
+    'react/no-find-dom-node': 0,
     'react/no-is-mounted': 2,
 
     // Prevent missing parentheses around multilines JSX

@@ -40,6 +40,8 @@ module.exports = {
     'func-name-matching': 2,
     'func-style': [2, 'declaration'],
     'generator-star-spacing': 0,
+    // http://eslint.org/docs/rules/getter-return
+    'getter-return': 'error',
     'id-blacklist': 2,
     'init-declarations': 0,
     // when using short composable functions, using single-letter
