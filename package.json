@@ -1,39 +1,22 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.11.3",
+  "version": "0.12.0",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
     "index.js",
     "react.js",
-    "rules/best-practices.js",
-    "rules/stylistic.js",
-    "rules/es6.js",
-    "rules/node.js",
-    "rules/possible-errors.js",
+    "rules",
     "jsx-a11y.js",
     "flowtype.js",
     "import.js",
     "promise.js"
   ],
-  "scripts": {
-    "find-new-rules": "eslint-find-rules --unused ./index.test.js",
-    "lint": "eslint .",
-    "test": "yarn lint && yarn find-new-rules",
-    "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/boldr/eslint-config-boldr.git"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "react",
-    "javascript",
-    "styleguide"
-  ],
+  "keywords": ["eslint", "eslintconfig", "config", "react", "javascript", "styleguide"],
   "author": "Steven Truesdell <steven@strues.io>",
   "license": "MIT",
   "bugs": {
@@ -41,7 +24,22 @@
   },
   "homepage": "https://github.com/boldr/eslint-config-boldr#readme",
   "engines": {
-    "node": ">= 7"
+    "node": "7.x || 8.x"
+  },
+  "scripts": {
+    "find-new-rules": "eslint-find-rules --unused ./index.test.js",
+    "lint": "eslint . --fix",
+    "test": "yarn lint && yarn find-new-rules",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "list-rules": "eslint-index .eslintrc.js --docs",
+    "table-rules": "eslint-index .eslintrc.js --format table",
+    "count-rules": "eslint-index .eslintrc.js --format number",
+    "list-omitted-rules": "eslint-index .eslintrc.js --status omitted --docs",
+    "count-omitted-rules": "eslint-index .eslintrc.js --status omitted --format number",
+    "list-enabled-rules": "eslint-index .eslintrc.js --status warn error --docs",
+    "count-enabled-rules": "eslint-index .eslintrc.js --status warn error --format number",
+    "list-disabled-rules": "eslint-index .eslintrc.js --status omitted off --docs",
+    "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
     "eslint": "^4.3.0",
@@ -52,6 +50,7 @@
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-find-rules": "^3.1.1",
+    "eslint-index": "^1.4.0",
     "npm-run-all": "^4.0.2",
     "prettier": "^1.5.3"
   },

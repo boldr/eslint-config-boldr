@@ -1,5 +1,7 @@
 module.exports = {
+  // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
   parser: 'babel-eslint',
+
   // http://eslint.org/docs/user-guide/configuring#specifying-parser-options
   parserOptions: {
     ecmaVersion: 2017,
@@ -10,6 +12,7 @@ module.exports = {
       generators: true,
     },
   },
+
   // http://eslint.org/docs/user-guide/configuring#specifying-environments
   env: {
     browser: true,
@@ -17,17 +20,24 @@ module.exports = {
     es6: true,
     jest: true,
   },
+
   // http://eslint.org/docs/user-guide/configuring#configuring-plugins
   plugins: ['babel', 'prettier'],
+
+  // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
   extends: [
-    './rules/stylistic.js',
-    './rules/best-practices.js',
-    './rules/possible-errors.js',
-    './rules/node.js',
-    './rules/es6.js',
+    './rules/base/stylistic',
+    './rules/base/best-practices',
+    './rules/base/errors',
+    './rules/base/node',
+    './rules/base/variables',
+    './rules/base/strict',
+    './rules/base/es6',
+    './rules/babel/babel',
+    './rules/prettier/prettier',
     './flowtype.js',
     './react.js',
     './jsx-a11y.js',
     './promise.js',
-  ],
+  ].map(require.resolve),
 };
