@@ -44,14 +44,7 @@ module.exports = {
      * Disallow variable declarations from shadowing variables declared in the outer scope
      * @see http://eslint.org/docs/rules/no-shadow
      */
-    'no-shadow': [
-      'error',
-      {
-        builtinGlobals: false,
-        hoist: 'functions',
-        allow: [],
-      },
-    ],
+    'no-shadow': 'off',
 
     /**
      * Disallow initializing variables to undefined
@@ -64,7 +57,7 @@ module.exports = {
      * Disallow the use of undeclared variables unless mentioned in /* global * / comments
      * @see http://eslint.org/docs/rules/no-undef
      */
-    'no-undef': 'error',
+    'no-undef': 'off',
 
     /**
      * Disallow the use of undefined as an identifier

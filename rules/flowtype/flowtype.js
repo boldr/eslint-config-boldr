@@ -68,25 +68,13 @@ module.exports = {
      * Requires that all function parameters have type annotations
      * @see https://github.com/gajus/eslint-plugin-flowtype#require-parameter-type
      */
-    'flowtype/require-parameter-type': [
-      'error',
-      {
-        excludeArrowFunctions: false,
-      },
-    ],
+    'flowtype/require-parameter-type': 'off',
 
     /**
      * Requires that functions have return type annotation
      * @see https://github.com/gajus/eslint-plugin-flowtype#require-return-type
      */
-    'flowtype/require-return-type': [
-      'error',
-      'always',
-      {
-        excludeArrowFunctions: false,
-        annotateUndefined: 'never',
-      },
-    ],
+    'flowtype/require-return-type': 'off',
 
     /**
      * Validates Flow file annotations
@@ -98,16 +86,7 @@ module.exports = {
      * Requires that all variable declarators have type annotations
      * @see https://github.com/gajus/eslint-plugin-flowtype#require-variable-type
      */
-    'flowtype/require-variable-type': [
-      'error',
-      {
-        excludeVariableTypes: {
-          const: false,
-          let: false,
-          var: false,
-        },
-      },
-    ],
+    'flowtype/require-variable-type': 'off',
 
     /**
      * Enforces consistent use of semicolons after type aliases

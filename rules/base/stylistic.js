@@ -370,7 +370,7 @@ module.exports = {
      * Disallow negated conditions
      * @see http://eslint.org/docs/rules/no-negated-condition
      */
-    'no-negated-condition': 'error',
+    'no-negated-condition': 'off',
 
     /**
      * Disallow nested ternary expressions

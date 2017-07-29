@@ -61,7 +61,7 @@ module.exports = {
      * Require default cases in switch statements
      * @see http://eslint.org/docs/rules/default-case
      */
-    'default-case': 'error',
+    'default-case': 'off',
 
     /**
      * Enforce consistent newlines before and after dots

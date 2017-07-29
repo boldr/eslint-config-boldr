@@ -70,12 +70,7 @@ module.exports = {
      * Disallow duplicate module imports
      * @see http://eslint.org/docs/rules/no-duplicate-imports
      */
-    'no-duplicate-imports': [
-      'error',
-      {
-        includeExports: false,
-      },
-    ],
+    'no-duplicate-imports': 0,
 
     /**
      * Disallow new operators with the Symbol object
@@ -153,16 +148,7 @@ module.exports = {
      * Require destructuring from arrays and/or objects
      * @see http://eslint.org/docs/rules/prefer-destructuring
      */
-    'prefer-destructuring': [
-      'error',
-      {
-        array: true,
-        object: true,
-      },
-      {
-        enforceForRenamedProperties: true,
-      },
-    ],
+    'prefer-destructuring': 0,
 
     /**
      * Disallow parseInt() in favor of binary, octal, and hexadecimal literals
