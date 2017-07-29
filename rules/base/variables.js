@@ -63,7 +63,7 @@ module.exports = {
      * Disallow the use of undefined as an identifier
      * @see http://eslint.org/docs/rules/no-undefined
      */
-    'no-undefined': 'error',
+    'no-undefined': 0,
 
     /**
      * Disallow unused variables

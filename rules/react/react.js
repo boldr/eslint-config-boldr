@@ -202,7 +202,7 @@ module.exports = {
      * Enforce a defaultProps definition for every prop that is not a required prop
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
      */
-    'react/require-default-props': 'error',
+    'react/require-default-props': 'off',
 
     /**
      * Enforce React components to have a shouldComponentUpdate method

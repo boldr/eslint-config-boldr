@@ -6,7 +6,7 @@
 
 Feel free to extend or submit comments / corrections. Currently working through documenting rules with comments above them  😄
 
-Works perfectly with [Prettier](https://github.com/prettier/prettier)  
+All rules conflicting with [Prettier](https://github.com/prettier/prettier) are disabled.  
 
 Included by default:
 - [Babel](https://github.com/babel/eslint-plugin-babel)

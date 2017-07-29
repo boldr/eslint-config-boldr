@@ -112,13 +112,7 @@ module.exports = {
      * Enforce event handler naming conventions in JSX
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
      */
-    'react/jsx-handler-names': [
-      'error',
-      {
-        eventHandlerPrefix: 'handle',
-        eventHandlerPropPrefix: 'on',
-      },
-    ],
+    'react/jsx-handler-names': 'off',
 
     /**
      * Validate JSX has key prop when in array or iterator
