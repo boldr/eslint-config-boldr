@@ -419,7 +419,7 @@ module.exports = {
      * Disallow dangling underscores in identifiers
      * @see http://eslint.org/docs/rules/no-underscore-dangle
      */
-    'no-underscore-dangle': 'error',
+    'no-underscore-dangle': 'off',
 
     /**
      * Disallow ternary operators when simpler alternatives exist
