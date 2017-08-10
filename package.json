@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.12.5",
+  "version": "0.12.6",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
@@ -27,7 +27,7 @@
     "node": "7.x || 8.x"
   },
   "scripts": {
-    "find-new-rules": "eslint-find-rules --unused ./index.test.js",
+    "find-new-rules": "eslint-find-rules --unused ./.eslintrc.js",
     "lint": "eslint . --fix",
     "test": "yarn lint && yarn find-new-rules",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
@@ -62,7 +62,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.2.0"
   },
   "config": {
     "commitizen": {

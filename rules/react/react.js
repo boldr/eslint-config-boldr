@@ -4,6 +4,13 @@ module.exports = {
    * @see https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
    */
   rules: {
+    'react/no-typos': 'error',
+    'react/no-unused-state': 'error',
+    /**
+     * Enforces consistent naming for boolean props
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
+     */
+    'react/boolean-prop-naming': ['error', { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],
     /**
      * Enforce all defaultProps have a corresponding non-required PropType
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
