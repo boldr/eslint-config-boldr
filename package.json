@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.12.6",
+  "version": "0.12.8",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
@@ -16,7 +16,14 @@
     "type": "git",
     "url": "git+https://github.com/boldr/eslint-config-boldr.git"
   },
-  "keywords": ["eslint", "eslintconfig", "config", "react", "javascript", "styleguide"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "react",
+    "javascript",
+    "styleguide"
+  ],
   "author": "Steven Truesdell <steven@strues.io>",
   "license": "MIT",
   "bugs": {
@@ -42,12 +49,12 @@
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
-    "eslint": ">=4.4.0",
+    "eslint": "4.5.0",
     "prettier": ">=1.5.3"
   },
   "devDependencies": {
     "cz-conventional-changelog-emoji": "^0.1.0",
-    "eslint": "^4.4.1",
+    "eslint": "^4.5.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-find-rules": "^3.1.1",
     "eslint-index": "^1.4.0",
@@ -60,9 +67,9 @@
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-prettier": "^2.2.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.2.0"
+    "eslint-plugin-react": "^7.3.0"
   },
   "config": {
     "commitizen": {
