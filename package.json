@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.12.8",
+  "version": "0.12.9",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
@@ -49,8 +49,8 @@
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
-    "eslint": "4.5.0",
-    "prettier": ">=1.5.3"
+    "eslint": "^4.5.0",
+    "prettier": "^1.6.1"
   },
   "devDependencies": {
     "cz-conventional-changelog-emoji": "^0.1.0",
@@ -58,8 +58,8 @@
     "eslint-config-prettier": "^2.3.0",
     "eslint-find-rules": "^3.1.1",
     "eslint-index": "^1.4.0",
-    "npm-run-all": "^4.0.2",
-    "prettier": "^1.5.3"
+    "npm-run-all": "^4.1.1",
+    "prettier": "^1.6.1"
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",

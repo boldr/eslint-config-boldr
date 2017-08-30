@@ -10,7 +10,7 @@ module.exports = {
      * Enforces consistent naming for boolean props
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
      */
-    'react/boolean-prop-naming': ['error', { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],
+    'react/boolean-prop-naming': 'off',
     /**
      * Enforce all defaultProps have a corresponding non-required PropType
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
