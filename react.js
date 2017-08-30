@@ -1,4 +1,10 @@
 module.exports = {
+  settings: {
+    react: {
+      pragma: 'React',
+      flowVersion: '0.53',
+    },
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
