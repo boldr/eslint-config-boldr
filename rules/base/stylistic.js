@@ -123,7 +123,7 @@ module.exports = {
         allowArrowFunctions: true,
       },
     ],
-
+    'function-paren-newline': 'off',
     /**
      * Disallow specified identifiers
      * @see http://eslint.org/docs/rules/id-blacklist
