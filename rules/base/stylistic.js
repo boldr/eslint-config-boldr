@@ -123,6 +123,10 @@ module.exports = {
         allowArrowFunctions: true,
       },
     ],
+    /**
+     * This rule enforces consistent line breaks inside parentheses of function parameters or arguments.
+     * @see https://eslint.org/docs/rules/function-paren-newline
+     */
     'function-paren-newline': 'off',
     /**
      * Disallow specified identifiers
