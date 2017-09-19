@@ -4,6 +4,11 @@ module.exports = {
    * @see https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
    */
   rules: {
+    /**
+     * Enforce curly braces or disallow unnecessary curly braces in JSX props and/or children.
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
+     */
+    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'react/no-typos': 'error',
     'react/no-unused-state': 'error',
     /**
