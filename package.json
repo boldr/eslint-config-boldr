@@ -49,8 +49,8 @@
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
-    "eslint": "^4.7.1",
-    "prettier": "^1.7.0"
+    "eslint": ">=4.7.0",
+    "prettier": ">=1.7.0"
   },
   "devDependencies": {
     "cz-conventional-changelog-emoji": "^0.1.0",
