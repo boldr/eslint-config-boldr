@@ -2,6 +2,7 @@ module.exports = {
   settings: {
     react: {
       pragma: 'React',
+      version: '16.0',
       flowVersion: '0.54',
     },
   },

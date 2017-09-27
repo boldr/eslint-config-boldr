@@ -5,6 +5,12 @@ module.exports = {
    */
   rules: {
     /**
+     * An extension of ESLint's no-unused-expressions. This rule ignores type cast expressions, 
+     * but otherwise behaves the same as ESLint's no-unused-expressions.
+     * @see https://github.com/gajus/eslint-plugin-flowtype#no-unused-expressions
+     */
+    'flowtype/no-unused-expressions': 'warn',
+    /**
      * Marks Flow type identifiers as defined
      * @see https://github.com/gajus/eslint-plugin-flowtype#define-flow-type
      */
