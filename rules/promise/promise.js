@@ -11,5 +11,6 @@ module.exports = {
     'promise/avoid-new': 'off',
     'promise/prefer-await-to-then': 0,
     'promise/prefer-await-to-callbacks': 0,
+    'promise/no-return-in-finally': 'error',
   },
 };

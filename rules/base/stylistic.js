@@ -200,6 +200,14 @@ module.exports = {
     'lines-around-directive': 'off',
 
     /**
+     * 
+     * This rule improves readability by enforcing lines between class members. It will not check empty lines before 
+     * the first member and after the last member, since that is already taken care of by padded-blocks.
+     * @see https://github.com/eslint/eslint/blob/master/docs/rules/lines-between-class-members.md
+     * 
+     */
+    'lines-between-class-members': ['error', 'always'],
+    /**
      * Enforce a maximum depth that blocks can be nested
      * @see http://eslint.org/docs/rules/max-depth
      */
@@ -273,6 +281,12 @@ module.exports = {
      * @see http://eslint.org/docs/rules/multiline-ternary
      */
     'multiline-ternary': 'off',
+
+    /**
+     * enforce a particular style for multiline comments (multiline-comment-style)
+     * @see https://github.com/eslint/eslint/blob/master/docs/rules/multiline-comment-style.md
+     */
+    'multiline-comment-style': 'off',
 
     /**
      * Require constructor names to begin with a capital letter
