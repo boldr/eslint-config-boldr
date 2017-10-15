@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.13.2",
+  "version": "0.13.3",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
@@ -49,7 +49,7 @@
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
-    "eslint": "4.8.0",
+    "eslint": "4.9.0",
     "prettier": ">=1.7.0"
   },
   "devDependencies": {
