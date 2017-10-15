@@ -1,0 +1,38 @@
+language: node_js
+dist: trusty
+
+node_js:
+  - "7"
+  - "8"
+  - "stable"
+
+sudo: false
+
+install:
+  - yarn
+
+script:
+  - yarn lint
+  - yarn find-new-rules
+  - yarn eslint-check
+
+cache:
+  yarn: true
+  directories:
+  - node_modules
+
+notifications:
+  email:
+    on_failure: change
+
+deploy:
+  - provider: npm
+    skip_cleanup: true
+    email: steven@strues.io
+    api_key:
+      secure: ZmNdIBz7ZM69KWQjyia042GF6tMpwa0vmc2+YBzv4zFGm9foTjlA0MaSrP+KI64D//yw575PB0dZr+FFuxzb9TG5UwaUJJz5bKRLm23sEQU6iFEpB5OMz1QD7xGve+1YcVto+vZmZHNZkjgi81/lNGIfRTRv8SHzkXtsV5h06l5wQUPG5SfX78PgKiRkH8uBWCNuy5kjWhE61mx3Fj8UUk0GDpaFHb32MB/U5rUTx+wdmoFziPHy4eYpc8a9FmIXE7+6bICQxpUlOmRbi3S2B+mApX5gHOrJAbUj3lDkyG4r+3AsTptjrqaI8yLihdMOOgrVYKuJhwPqj24r4Bfd+WvLGLyWMkFDNFIoos+roOSNOalfXgWiH/p8IFdLUOggmJ7Rc2ChuUNlZD9HBHDFRIf5+39InOXdxJhPdcMld6613yJ285NruL6uqwuc3DBlz/EuSHQpW1iK++6IGttb2/5W9eptJRsbXn2tqfU4hJ3xJnu56bTgmKXtuSketNeVOwvunoOIkfhn0hZuIQx0kb9kLA5TpjpGeHyu4OgNx24KzphVnPXbjtAg8J5eSM6EfOoaWmfyI/rPyhjgFSfm6kwF2v/mrV0iY+LPvCFApeHSWp1fJ+Iv/XoyLRqte4UeYWjyS8tisMXRdPlWxGOsOjyYO7qEIYpS1PzdZwNHr94=
+    on:
+      tags: true
+
+branches:
+  only: master

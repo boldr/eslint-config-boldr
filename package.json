@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.13.3",
+  "version": "0.14.0",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
@@ -37,6 +37,7 @@
     "find-new-rules": "eslint-find-rules --unused ./.eslintrc.js",
     "lint": "eslint . --fix",
     "test": "yarn lint && yarn find-new-rules",
+    "test:ci": "yarn lint && yarn find-new-rules && yarn eslint-check",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "list-rules": "eslint-index .eslintrc.js --docs",
     "table-rules": "eslint-index .eslintrc.js --format table",

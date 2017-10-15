@@ -179,7 +179,7 @@ module.exports = {
      * @see http://eslint.org/docs/rules/no-floating-decimal
      * @fixable
      */
-    'no-floating-decimal': 'error',
+    'no-floating-decimal': 'off',
 
     /**
      * Disallow assignments to native objects or read-only global variables
