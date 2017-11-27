@@ -17,6 +17,17 @@ module.exports = {
      */
     'react/boolean-prop-naming': 'off',
     /**
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
+     */
+    'react/button-has-type': [
+      'error',
+      {
+        button: false,
+        submit: true,
+        reset: true,
+      },
+    ],
+    /**
      * Enforce all defaultProps have a corresponding non-required PropType
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
      */
@@ -26,6 +37,10 @@ module.exports = {
         allowRequiredDefaults: true,
       },
     ],
+    /**
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
+     */
+    'react/destructuring-assignment': 'off',
     /**
      * Prevent missing displayName in a React component definition
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
@@ -85,7 +100,10 @@ module.exports = {
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
      */
     'react/no-deprecated': 'error',
-
+    /**
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md
+     */
+    'react/no-access-state-in-setstate': 'error',
     /**
      * Prevent usage of setState in componentDidMount
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md

@@ -145,7 +145,11 @@ module.exports = {
      * @see http://eslint.org/docs/rules/id-match
      */
     'id-match': 'off',
-
+    /**
+     * Consistent location for an arrow function containing an implicit return
+     * @see https://eslint.org/docs/rules/implicit-arrow-linebreak
+     */
+    'implicit-arrow-linebreak': ['error', 'beside'],
     /**
      * Enforce consistent indentation
      * @see http://eslint.org/docs/rules/indent
@@ -200,11 +204,11 @@ module.exports = {
     'lines-around-directive': 'off',
 
     /**
-     * 
-     * This rule improves readability by enforcing lines between class members. It will not check empty lines before 
+     *
+     * This rule improves readability by enforcing lines between class members. It will not check empty lines before
      * the first member and after the last member, since that is already taken care of by padded-blocks.
      * @see https://github.com/eslint/eslint/blob/master/docs/rules/lines-between-class-members.md
-     * 
+     *
      */
     'lines-between-class-members': ['error', 'always'],
     /**

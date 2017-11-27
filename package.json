@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-boldr",
-  "version": "0.14.1",
+  "version": "0.14.4",
   "description": "ESLint rules for Boldr.",
   "main": "index.js",
   "files": [
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/boldr/eslint-config-boldr#readme",
   "engines": {
-    "node": "7.x || 8.x"
+    "node": "7.x || 8.x || 9.x"
   },
   "scripts": {
     "find-new-rules": "eslint-find-rules --unused ./.eslintrc.js",
@@ -50,26 +50,26 @@
     "count-disabled-rules": "eslint-index .eslintrc.js --status omitted off --format number"
   },
   "peerDependencies": {
-    "eslint": "4.9.0",
-    "prettier": ">=1.7.0"
+    "eslint": "4.12.0",
+    "prettier": ">=1.8.0"
   },
   "devDependencies": {
     "cz-conventional-changelog-emoji": "^0.1.0",
-    "eslint": "^4.10.0",
-    "eslint-config-prettier": "^2.6.0",
+    "eslint": "4.12.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-find-rules": "^3.1.1",
     "eslint-index": "^1.4.0",
-    "prettier": "^1.7.4"
+    "prettier": "^1.8.2"
   },
   "dependencies": {
-    "babel-eslint": "8.0.1",
+    "babel-eslint": "8.0.2",
     "eslint-plugin-babel": "4.1.2",
     "eslint-plugin-flowtype": "2.39.1",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "6.0.2",
     "eslint-plugin-prettier": "2.3.1",
     "eslint-plugin-promise": "3.6.0",
-    "eslint-plugin-react": "7.4.0"
+    "eslint-plugin-react": "7.5.1"
   },
   "config": {
     "commitizen": {

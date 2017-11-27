@@ -155,7 +155,10 @@ module.exports = {
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
      */
     'react/jsx-no-undef': 'error',
-
+    /**
+     * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-one-expression-per-line.md
+     */
+    'react/jsx-one-expression-per-line': 'error',
     /**
      * Enforce PascalCase for user-defined JSX components
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
