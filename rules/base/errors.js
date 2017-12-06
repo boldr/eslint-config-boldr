@@ -175,7 +175,7 @@ module.exports = {
      * Disallow confusing multiline expressions
      * @see http://eslint.org/docs/rules/no-unexpected-multiline
      */
-    'no-unexpected-multiline': 'error',
+    'no-unexpected-multiline': 'off',
 
     /**
      * Disallow unreachable code after return, throw, continue, and break statements

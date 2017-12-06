@@ -22,7 +22,7 @@ module.exports = {
     'react/button-has-type': [
       'error',
       {
-        button: false,
+        button: true,
         submit: true,
         reset: true,
       },

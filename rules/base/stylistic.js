@@ -149,7 +149,7 @@ module.exports = {
      * Consistent location for an arrow function containing an implicit return
      * @see https://eslint.org/docs/rules/implicit-arrow-linebreak
      */
-    'implicit-arrow-linebreak': ['error', 'beside'],
+    'implicit-arrow-linebreak': 'off',
     /**
      * Enforce consistent indentation
      * @see http://eslint.org/docs/rules/indent

@@ -156,9 +156,10 @@ module.exports = {
      */
     'react/jsx-no-undef': 'error',
     /**
+     * off for prettier
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-one-expression-per-line.md
      */
-    'react/jsx-one-expression-per-line': 'error',
+    'react/jsx-one-expression-per-line': 'off',
     /**
      * Enforce PascalCase for user-defined JSX components
      * @see https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
